@@ -40,7 +40,7 @@ export default function HomePage() {
             shared treasury. Claim your share later from your account.
           </p>
           <Link
-            href="/create"
+            href="https://four.meme?code=C5UE2M5H89FC"
             className="hover-glow mt-8 inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-emerald-500/50 hover:scale-105"
           >
             Go to Token Creator
@@ -49,7 +49,7 @@ export default function HomePage() {
           {/* X and Telegram buttons */}
           <div className="mt-8 flex justify-center gap-4">
             <a
-              href="https://x.com/4share"
+              href="https://four.meme?code=C5UE2M5H89FC"
               target="_blank"
               rel="noopener noreferrer"
               className="hover-glow flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
@@ -60,7 +60,7 @@ export default function HomePage() {
               </svg>
             </a>
             <a
-              href="https://t.me/4share"
+              href="https://four.meme?code=C5UE2M5H89FC"
               target="_blank"
               rel="noopener noreferrer"
               className="hover-glow flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
