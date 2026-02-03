@@ -17,25 +17,25 @@ export function Header() {
         <nav className="flex items-center gap-6">
           <Link
             href="/tokens"
-            className="text-sm font-medium text-white/80 transition hover:text-emerald-400"
+            className="text-sm font-medium text-white/80 transition hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]"
           >
             Tokens
           </Link>
           <Link
             href="/claim"
-            className="text-sm font-medium text-white/80 transition hover:text-emerald-400"
+            className="text-sm font-medium text-white/80 transition hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]"
           >
             Claim
           </Link>
           <Link
             href="/how-to-claim"
-            className="text-sm font-medium text-white/80 transition hover:text-emerald-400"
+            className="text-sm font-medium text-white/80 transition hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]"
           >
             How to Claim
           </Link>
           <Link
             href="/create"
-            className="text-sm font-medium text-white/80 transition hover:text-emerald-400"
+            className="text-sm font-medium text-white/80 transition hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]"
           >
             Token Creator
           </Link>

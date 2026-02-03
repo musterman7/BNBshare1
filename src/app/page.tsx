@@ -1,17 +1,15 @@
 import Link from "next/link";
+import { MatrixRain } from "@/components/MatrixRain";
+import { TreasuryAddress } from "@/components/TreasuryAddress";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-black pt-24 pb-20">
-      {/* Gradient background effect */}
-      <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-emerald-500/20 blur-3xl" />
-        <div className="absolute top-60 -left-40 h-80 w-80 rounded-full bg-green-500/10 blur-3xl" />
-      </div>
-
-      <div className="mx-auto max-w-4xl px-4">
+    <>
+      <MatrixRain />
+      <main className="relative min-h-screen bg-transparent pt-24 pb-20">
+        <div className="relative mx-auto max-w-4xl px-4">
         {/* Stats bar */}
-        <div className="mb-12 grid grid-cols-3 gap-4 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 to-green-500/5 p-6 backdrop-blur-sm">
+        <div className="hover-glow mb-12 grid grid-cols-3 gap-4 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 to-green-500/5 p-6 backdrop-blur-sm">
           <div className="text-center">
             <div className="text-2xl font-bold text-emerald-400">0</div>
             <div className="text-xs text-white/60">Tokens Launched</div>
@@ -43,7 +41,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/create"
-            className="mt-8 inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-emerald-500/50 hover:scale-105"
+            className="hover-glow mt-8 inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-emerald-500/50 hover:scale-105"
           >
             Go to Token Creator
           </Link>
@@ -54,7 +52,7 @@ export default function HomePage() {
               href="https://x.com/4share"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
+              className="hover-glow flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
               aria-label="X (Twitter)"
             >
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -65,7 +63,7 @@ export default function HomePage() {
               href="https://t.me/4share"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
+              className="hover-glow flex h-12 w-12 items-center justify-center rounded-xl border border-emerald-500/30 bg-white/5 text-white transition-all hover:border-emerald-500/60 hover:bg-emerald-500/20 hover:scale-105"
               aria-label="Telegram"
             >
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -73,10 +71,13 @@ export default function HomePage() {
               </svg>
             </a>
           </div>
+
+          {/* Treasury Contract Address */}
+          <TreasuryAddress />
         </div>
 
         {/* How It Works */}
-        <section className="mb-20 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-white/5 to-emerald-500/5 p-8 backdrop-blur-sm">
+        <section className="hover-glow mb-20 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-white/5 to-emerald-500/5 p-8 backdrop-blur-sm">
           <h2 className="mb-6 text-2xl font-bold text-white">How It Works</h2>
           <div className="space-y-6">
             <div className="group flex gap-4 rounded-xl border border-white/5 bg-white/5 p-4 transition-all hover:border-emerald-500/30 hover:bg-emerald-500/5">
@@ -116,7 +117,7 @@ export default function HomePage() {
         </section>
 
         {/* Project explanation */}
-        <section className="rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-white/5 to-emerald-500/5 p-8 backdrop-blur-sm">
+        <section className="hover-glow rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-white/5 to-emerald-500/5 p-8 backdrop-blur-sm">
           <h2 className="mb-6 text-2xl font-bold text-white">About 4Share</h2>
           <p className="mb-4 text-white/80 leading-relaxed">
             4Share is a platform that lets you launch <strong className="text-emerald-400">Tax Tokens</strong> on
@@ -135,7 +136,8 @@ export default function HomePage() {
             and when fees accumulate, claim from the <Link href="/claim" className="text-emerald-400 hover:underline">Claim page</Link>.
           </p>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }

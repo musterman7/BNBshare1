@@ -45,7 +45,7 @@ export function ConnectWallet() {
       type="button"
       onClick={() => injectedConnector && connect({ connector: injectedConnector })}
       disabled={isDisabled}
-      className="rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-5 py-2.5 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-emerald-500/50 hover:scale-105 disabled:opacity-50 disabled:hover:scale-100"
+      className="hover-glow rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-5 py-2.5 font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-emerald-500/50 hover:scale-105 disabled:opacity-50 disabled:hover:scale-100"
       title="Connect with MetaMask or Rabby (BNB Chain)"
     >
       {isPending ? "Connecting..." : "Connect Wallet"}
